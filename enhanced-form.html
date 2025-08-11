@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form Example</title>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Form Example</h1>
+</header>
+
+<main>
+    <section>
+        <h2>Features Included</h2>
+        <ul>
+            <li>Lists for structured content</li>
+            <li>Table for data presentation</li>
+            <li>Embedded image and video</li>
+            <li>HTML5 form with validation and accessibility</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sample Table</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Validation</td>
+                    <td>Ensures user input meets specific rules before submission.</td>
+                </tr>
+                <tr>
+                    <td>Accessibility</td>
+                    <td>Improves usability for all, including assistive technology users.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Media</h2>
+        <img src="https://via.placeholder.com/600x200" alt="Sample placeholder image">
+        <br><br>
+        <video controls width="600">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+            </p>
+
+            <p>
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </p>
+
+            <p>
+                <label for="password">Password:</label><br>
+                <input type="password" id="password" name="password" minlength="8" placeholder="At least 8 characters" required>
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth:</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </p>
+
+            <p>
+                <label for="gender">Gender:</label><br>
+                <select id="gender" name="gender" required>
+                    <option value="">--Select--</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Prefer not to say</option>
+                </select>
+            </p>
+
+            <p>
+                <label>Skills (Select at least one):</label><br>
+                <input type="checkbox" id="html" name="skills" value="HTML" required> <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="skills" value="CSS"> <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="skills" value="JavaScript"> <label for="js">JavaScript</label>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="+1 555 555 5555" pattern="\+?[0-9\s\-]{7,15}">
+            </p>
+
+            <p>
+                <label for="website">Portfolio Website:</label><br>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+            </p>
+
+            <p>
+                <label for="readonly-field">Membership ID (Read Only):</label><br>
+                <input type="text" id="readonly-field" name="memberid" value="AUTO-12345" readonly>
+            </p>
+
+            <p>
+                <label for="bio">Short Bio:</label><br>
+                <textarea id="bio" name="bio" placeholder="Tell us about yourself" rows="4"></textarea>
+            </p>
+
+            <p>
+                <label for="resume">Upload Resume (PDF only):</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf">
+            </p>
+
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced Form Example</p>
+</footer>
+
+</body>
+</html>
